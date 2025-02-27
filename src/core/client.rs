@@ -43,7 +43,7 @@ impl APIClient {
 
         if !response.status().is_success() {
             let error_text = response
-                .json()
+                .text()
                 .await
                 .map_err(|e| LlmApiError::DeserializationError(e.to_string()))?;
             let error = LlmApiError::NetworkError(error_text);

@@ -1,6 +1,7 @@
 pub mod anthropic;
 pub mod deepseek;
 pub mod gemini;
+pub mod groq;
 pub mod ollama;
 pub mod openai;
 pub mod xai;
@@ -21,4 +22,5 @@ pub use anthropic::Anthropic;
 pub use deepseek::DeepSeek;
 pub use gemini::Gemini;
 pub use openai::OpenAI;
+pub mod together;
 pub use xai::XAI;
